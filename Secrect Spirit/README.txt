@@ -1,0 +1,2 @@
+Bugs:
+- bad at responsive

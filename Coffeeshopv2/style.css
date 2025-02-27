@@ -1,0 +1,144 @@
+:root {
+    --font-color: white;
+    --hover-color: lightseagreen;
+    --hover-color2: #F4442E;
+}
+
+html {
+    background-color: #333;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    font-size: 19px;
+    font-family: monospace;   
+}
+
+body {
+    background: url("./bg.png");
+    background-size: cover;
+    background-position: center;
+
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 46px;
+    color: var(--font-color);
+}
+
+.navbar ul {
+    list-style-type: none;
+    display: flex;
+}
+
+.navbar ul li {
+    margin-left: 2vw;
+}
+
+.navbar a {
+    color: var(--font-color);
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    color: var(--hover-color2);
+    transition: .3s;
+}
+
+.btn {
+    border-radius: 7px;
+    padding: 10px 20px;
+    border: 3px solid white;
+    /* background-color: var(--hover-color); */
+    transition: .3s ease;
+}
+
+section {
+    color: var(--font-color);
+    padding: 0 12%;
+}
+
+
+.main-container {
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    
+    align-items: center;
+    gap: 5vw;
+
+    text-align: justify;
+}
+
+
+.main-text {
+    order: 2;
+}
+
+.logo {
+    font-weight: 900;
+}
+
+.main-container h5 {
+    font-weight: 600;
+    letter-spacing: 3px;
+}
+
+.main-container h1 {
+    font-weight: 900;
+    font-size: 4.4rem;
+    white-space: nowrap;
+    letter-spacing: 3px;
+    /* margin-top: 100px; */
+}
+
+.main-container p {
+    font-size: 20px;
+    line-height: 35px;
+}
+
+.orderbtn {
+    margin-top: 32px;
+    padding: 15px 25px;
+    background-color: var(--hover-color2);
+    border: 2px transparent;
+    border-radius: 8px;
+    color: var(--font-color);
+    font-weight: 600;
+    transition: .5s ease;
+}
+
+.orderbtn:hover {
+    transform: scale(1.1);
+}
+
+
+.main-img img {
+    width: 100%;
+    height: auto;
+}
+
+.icons {
+    position: absolute;
+    top: 50%;
+    padding: 0 5%;
+    transform: translateY(-50%);
+}
+
+.icons i {
+    display: block;
+    margin: 35px 0;
+    color: var(--font-color);
+    transition: all .6s;
+    font-size: 1.3rem;
+}
+
+.icons i:hover {
+    transform: translateY(-5px);
+    color: var(--hover-color2);
+}
