@@ -1,0 +1,109 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+:root {
+    --text-color: white;
+    --background-color: #333;
+    --hover-color-lightseagreen: lightseagreen;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 1.25rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+body {
+    background-color: var(--background-color);
+}
+
+.navbar {
+    display: flex;
+    padding: 25px 40px;
+    justify-content: space-between;
+    color: var(--text-color);
+}
+
+.navlinks {
+    display: flex;
+    list-style-type: none;    
+}
+
+.navlinks li {
+    margin-left: 1.2vw;
+}
+
+.navlinks li a {
+    color: white;
+    text-decoration: none;
+    transition: .7s;
+}
+
+.color {
+    color: var(--hover-color-lightseagreen);
+    transition: .5s all;
+}
+
+
+
+.navlinks li a:hover {
+    color: var(--hover-color-lightseagreen);
+}
+
+
+.main {
+    color: var(--text-color);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    padding: 0 6.5%;
+}
+
+.wcyd-text ul {
+    display: flex;
+    list-style-type: '- ';
+    /* margin-left: 20px; */
+}
+
+.wcyd-text ul li {
+    margin-left: 1.2vw;
+    /* border-left: 2px solid white; */
+}
+
+/* TYPO */
+
+.greeting-text {
+    margin-bottom: 30px;
+}
+
+
+.greeting-text h1, span {
+    font-size: 2.5rem;
+
+}
+
+.descrip-info {
+    text-align: justify;
+    letter-spacing: 1.4px;
+    line-height: 36px;
+    margin-top: 5vh;
+}
+
+.main-img {
+    display: flex;
+    flex-direction: column;
+}
+
+.main-img img {
+    height: auto;
+    width: 100%;
+
+}
